@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Sides">
+    <children>
+        <ImageView fitHeight="81.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/01.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="16.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #911F27;" text="HOME" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <Button layoutX="206.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #630A10;" text="MENU" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="394.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToContact" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #911F27;" text="CONTACT US" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Pane layoutX="38.0" layoutY="133.0" prefHeight="228.0" prefWidth="523.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <RadioButton fx:id="r1" layoutX="25.0" layoutY="168.0" mnemonicParsing="false" selected="true" text="Marinara sauce" />
+                <RadioButton fx:id="r2" layoutX="210.0" layoutY="165.0" mnemonicParsing="false" text="Marinara Sauce" />
+            <CheckBox fx:id="check1" layoutX="23.0" layoutY="138.0" mnemonicParsing="false" selected="true" text="Breadsticks - $4.00" />
+            <CheckBox fx:id="check2" layoutX="184.0" layoutY="138.0" mnemonicParsing="false" text="Breadsticks Bites - $2.00" />
+            <CheckBox fx:id="check3" layoutX="353.0" layoutY="138.0" mnemonicParsing="false" text="Big Chocolate Chip Cookies" />
+            <ImageView fitHeight="117.0" fitWidth="155.0" layoutX="10.0" layoutY="8.0">
+               <image>
+                  <Image url="@img/03.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="109.0" fitWidth="142.0" layoutX="192.0" layoutY="12.0">
+               <image>
+                  <Image url="@img/04.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="117.0" fitWidth="142.0" layoutX="367.0" layoutY="10.0">
+               <image>
+                  <Image url="@img/05.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="174.0" layoutY="14.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Separator layoutX="347.0" layoutY="14.0" orientation="VERTICAL" prefHeight="200.0" />
+            <ChoiceBox fx:id="q1" layoutX="57.0" layoutY="194.0" prefHeight="17.0" prefWidth="40.0" />
+            <ChoiceBox fx:id="q2" layoutX="242.0" layoutY="193.0" prefHeight="17.0" prefWidth="40.0" />
+            <ChoiceBox fx:id="q3" layoutX="415.0" layoutY="191.0" prefHeight="17.0" prefWidth="40.0" />
+            <Label alignment="CENTER" layoutX="399.0" layoutY="163.0" prefHeight="17.0" prefWidth="68.0" text="\$2.00" textAlignment="CENTER" wrapText="true">
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </Label>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+        </Pane>
+        <Button layoutX="419.0" layoutY="368.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #911F27;" text="Add to Cart" textFill="WHITE" />
+        <Button layoutX="353.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToDrink" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #911F27;" text="Beverages" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="Controller" layoutX="238.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToSides" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #630A10;" text="Sides" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="123.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #911F27;" text="Pizza" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.ForgotPass">
+   <children>
+       <ImageView fitHeight="81.0" fitWidth="600.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@img/01.png" />
+           </image>
+       </ImageView>
+       <Button layoutX="22.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #911F27;" text="HOME" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font></Button>
+       <Button layoutX="215.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #911F27;" text="MENU" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Button>
+       <Button layoutX="403.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToContact" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #911F27;" text="CONTACT US" textFill="WHITE">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="156.0" prefHeight="26.0" prefWidth="339.0" text="Please enter email to reset password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="155.0" layoutY="200.0" prefHeight="34.0" prefWidth="306.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="262.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#Forgot" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #911F27;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="ty" alignment="CENTER" layoutX="116.0" layoutY="324.0" prefHeight="31.0" prefWidth="383.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

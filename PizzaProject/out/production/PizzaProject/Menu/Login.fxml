@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Login">
+   <children>
+       <ImageView fitHeight="81.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@img/01.png" />
+           </image>
+       </ImageView>
+      <Button layoutX="22.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #911F27;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="215.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #911F27;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToContact" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #911F27;" text="CONTACT US" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="148.0" prefHeight="39.0" prefWidth="86.0" text="Email" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="221.0" prefHeight="39.0" prefWidth="104.0" text="Password" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="196.0" layoutY="228.0" prefHeight="26.0" prefWidth="149.0" />
+      <Button layoutX="403.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToForgot" prefHeight="39.0" prefWidth="151.0" style="-fx-background-color: #911F27;" text="Forgot Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="428.0" layoutY="221.0" mnemonicParsing="false" onAction="#switchToSignup" onMouseClicked="#userLogin" prefHeight="40.0" prefWidth="97.0" style="-fx-background-color: #911F27;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="" layoutX="194.0" layoutY="289.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="39.0" prefWidth="151.0" style="-fx-background-color: #911F27;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField layoutX="196.0" layoutY="155.0" prefHeight="26.0" prefWidth="151.0" />
+      <Label fx:id="ty" alignment="CENTER" layoutX="123.0" layoutY="342.0" prefHeight="39.0" prefWidth="294.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

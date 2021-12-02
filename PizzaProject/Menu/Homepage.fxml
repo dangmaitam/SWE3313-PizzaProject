@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Homepage">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/01.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="211.0" layoutY="90.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="51.0" prefWidth="198.0" style="-fx-background-color: #911F27;" text="START ORDER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="211.0" layoutY="164.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="51.0" prefWidth="198.0" style="-fx-background-color: #911F27;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="211.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="51.0" prefWidth="198.0" style="-fx-background-color: #911F27;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="211.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToContact" prefHeight="51.0" prefWidth="198.0" style="-fx-background-color: #911F27;" text="CONTACT US" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

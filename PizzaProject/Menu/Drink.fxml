@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Drink">
+    <children>
+        <ImageView fitHeight="81.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/01.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="16.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #911F27;" text="HOME" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <Button layoutX="206.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #630A10;" text="MENU" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button layoutX="394.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchToContact" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #911F27;" text="CONTACT US" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Pane layoutX="38.0" layoutY="133.0" prefHeight="228.0" prefWidth="523.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Label alignment="CENTER" layoutX="7.0" layoutY="5.0" prefHeight="28.0" prefWidth="180.0" style="-fx-background-color: #d8d8d8;" text="Drinks" textAlignment="CENTER" wrapText="true">
+                    <opaqueInsets>
+                        <Insets top="10.0" />
+                    </opaqueInsets>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="190.0" layoutY="5.0" prefHeight="28.0" prefWidth="168.0" style="-fx-background-color: #d8d8d8;" text="Quantity" textAlignment="CENTER" wrapText="true">
+                    <opaqueInsets>
+                        <Insets top="10.0" />
+                    </opaqueInsets>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="360.0" layoutY="5.0" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: #d8d8d8;" text="Size" textAlignment="CENTER" wrapText="true">
+                    <opaqueInsets>
+                        <Insets top="10.0" />
+                    </opaqueInsets>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="b1" layoutX="20.0" layoutY="41.0" mnemonicParsing="false" selected="true" text="Pepsi">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="drink" />
+                    </toggleGroup></RadioButton>
+                <ChoiceBox fx:id="q1" layoutX="248.0" layoutY="36.0" prefHeight="25.0" prefWidth="50.0" />
+                <RadioButton fx:id="b2" layoutX="20.0" layoutY="68.0" mnemonicParsing="false" text="Diet Pepsi" toggleGroup="$drink" />
+                <RadioButton fx:id="b3" layoutX="20.0" layoutY="95.0" mnemonicParsing="false" text="Pepsi Crush Orange" toggleGroup="$drink" />
+                <RadioButton fx:id="b4" layoutX="20.0" layoutY="121.0" mnemonicParsing="false" text="Pepsi Crush Diet Orange" toggleGroup="$drink" />
+                <RadioButton fx:id="b5" layoutX="20.0" layoutY="149.0" mnemonicParsing="false" text="Sierra Mist" toggleGroup="$drink" />
+                <RadioButton fx:id="b6" layoutX="20.0" layoutY="175.0" mnemonicParsing="false" text="Diet Sierra Mist" toggleGroup="$drink" />
+                <RadioButton fx:id="b7" layoutX="20.0" layoutY="205.0" mnemonicParsing="false" text="Lemonade" toggleGroup="$drink" />
+                <ChoiceBox fx:id="q2" layoutX="248.0" layoutY="64.0" prefHeight="18.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="q3" layoutX="248.0" layoutY="91.0" prefHeight="18.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="q4" layoutX="248.0" layoutY="119.0" prefHeight="18.0" prefWidth="50.0" />
+                <Separator layoutX="8.0" layoutY="62.0" prefHeight="0.0" prefWidth="507.0" />
+                <Separator layoutX="9.0" layoutY="116.0" prefHeight="0.0" prefWidth="507.0" />
+                <ChoiceBox fx:id="q7" layoutX="247.0" layoutY="203.0" prefHeight="18.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="q6" layoutX="248.0" layoutY="174.0" prefHeight="18.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="q5" layoutX="248.0" layoutY="146.0" prefHeight="18.0" prefWidth="50.0" />
+                <Separator layoutX="9.0" layoutY="90.0" prefHeight="0.0" prefWidth="507.0" />
+                <Separator layoutX="9.0" layoutY="200.0" prefHeight="0.0" prefWidth="507.0" />
+                <Separator layoutX="7.0" layoutY="145.0" prefHeight="0.0" prefWidth="507.0" />
+                <Separator layoutX="7.0" layoutY="172.0" prefHeight="0.0" prefWidth="507.0" />
+                <ChoiceBox fx:id="s1" layoutX="413.0" layoutY="36.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s2" layoutX="413.0" layoutY="64.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s3" layoutX="413.0" layoutY="91.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s4" layoutX="413.0" layoutY="118.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s5" layoutX="413.0" layoutY="145.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s6" layoutX="413.0" layoutY="174.0" prefHeight="17.0" prefWidth="50.0" />
+                <ChoiceBox fx:id="s7" layoutX="413.0" layoutY="202.0" prefHeight="17.0" prefWidth="50.0" />
+            </children>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+        </Pane>
+        <Button layoutX="418.0" layoutY="366.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #911F27;" text="Add to Cart" textFill="WHITE" />
+        <Button layoutX="353.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToDrink" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #630A10;" text="Beverages" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="Controller" alignment="CENTER" layoutX="238.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToSides" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #911F27;" text="Sides" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="123.0" layoutY="98.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #911F27;" text="Pizza" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

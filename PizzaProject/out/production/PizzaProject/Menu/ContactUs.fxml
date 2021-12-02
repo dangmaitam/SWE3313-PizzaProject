@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fcf0c8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.ContactUs">
+   <children>
+       <ImageView fitHeight="81.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@img/01.png" />
+           </image>
+       </ImageView>
+      <Button layoutX="22.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #911F27;" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="215.0" layoutY="74.0" mnemonicParsing="false" onAction="#switchToPizza" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #911F27;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="74.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #630A10;" text="CONTACT US" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="122.0" prefHeight="34.0" prefWidth="146.0" text="Phone: (770) 555-1212">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="227.0" layoutY="129.0" prefHeight="18.0" prefWidth="351.0" text="Address: 680 Aronson Rd, Suite 161, Marietta, GA 30060">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="167.0" text="Email">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="121.0" layoutY="154.0" prefHeight="18.0" prefWidth="286.0" />
+      <Label layoutX="35.0" layoutY="200.0" text="Feedback">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="121.0" layoutY="198.0" prefHeight="138.0" prefWidth="286.0" />
+      <Label fx:id="ty" alignment="CENTER" layoutX="121.0" layoutY="349.0" prefHeight="34.0" prefWidth="286.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="" layoutX="452.0" layoutY="347.0" mnemonicParsing="true" onMouseClicked="#submitForm" prefHeight="19.0" prefWidth="115.0" style="-fx-background-color: #911F27;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
